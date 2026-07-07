@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fault Location"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Transmission Line"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <Spinner
+            android:id="@+id/spinnerLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single End" />
+
+            <RadioButton
+                android:id="@+id/radioDouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Double End"
+                android:checked="true" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local Pre-Fault Condition"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/etPreVsMag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive_seq voltage mag(KV)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etPreVsAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq voltage angle(degree)"
+            android:inputType="numberDecimal|numberSigned"/>
+
+        <EditText
+            android:id="@+id/etPreIsMag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq current mag (A)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etPreIsAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq current angle (degree)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:id="@+id/tvPreReceivingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local end conditions"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/etPreVrMag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq voltage mag (kv)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etPreVrAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq voltage angle(degree)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etPreIrMag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="positive-seq current mag(A)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etPreIrAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq current angle(degree)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local Fault Condition"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/etFaultVsMag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq voltage mag(kv)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etFaultVsAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq voltage angle(degree)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etFaultIsMag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq current mag(A)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etFaultIsAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq current angle(degree)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:id="@+id/tvFaultReceivingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local end fault condition"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/etFaultVrMag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq voltage mag(kv)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etFaultVrAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq voltage angle(degree)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etFaultIrMag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq current mag (A)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etFaultIrAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Positive-seq current angle(degree)"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etLineLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Line Length in km (optional)"
+            android:inputType="numberDecimal"
+            android:paddingTop="12dp" />
+        <Button
+            android:id="@+id/btnShowResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Results" />
+
+        <TextView
+            android:id="@+id/tvLocationResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnLocateFault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Locate Fault" />
+        <Button
+            android:id="@+id/btnAiAssistant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI Fault Assistant" />
+
+    </LinearLayout>
+
+</ScrollView>

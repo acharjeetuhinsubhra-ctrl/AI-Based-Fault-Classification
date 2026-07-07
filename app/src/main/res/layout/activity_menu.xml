@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Module"
+            android:textColor="#0B1F3A"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI-Based Transmission Line Fault Analysis System"
+            android:textColor="#52677A"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="28dp" />
+
+        <Button
+            android:id="@+id/btnFaultClassification"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:text="Fault Classification&#10;Upload COMTRADE files and classify fault type"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1565C0"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnFaultLocation"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:text="Fault Location&#10;Estimate fault distance and tower position"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#2E7D32"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnAiAssistant"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:text="AI Fault Assistant&#10;Ask questions on faults, CFG/DAT and protection"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#5E35B1"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accurate  •  Reliable  •  Intelligent"
+            android:textColor="#607D8B"
+            android:textSize="15sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
